@@ -88,8 +88,7 @@ Python Libraries:
 - pandas
 - numpy
 - scikit-learn
-- matplotlib
-- seaborn
+- pathlib
 
 Environment:
 Jupyter Notebook or any other Python development environment.
