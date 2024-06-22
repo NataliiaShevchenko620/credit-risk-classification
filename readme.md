@@ -54,7 +54,7 @@ The predictions are compared with the actual outcomes in the test set. Key perfo
 
 The main diagonal shows the correct answers. The confusion matrix showed that the model gave the correct result in cases where people returned the credit. There were `14926` such cases. The model made incorrect predictions `75` times in cases where it predicted that people would not return the credit, but in fact, they did. And `45` times the opposite happened. 
 
-![Classification report](credit-risk-classification/Report.png)
+![Classification report](Image/Report.png)
 
 The model demonstrates high accuracy with a significant number of correct predictions (`14926` `True Negatives` and `461` `True Positives`), and a low rate of `False Positives` (`75`), minimizing the risk of denying credit to potentially reliable clients. The small number of False Negatives (`46`) suggests effective risk management in credit issuance. Overall, the model maintains a good balance between precision and recall, ensuring reliability in predicting credit returns, which enhances both economic efficiency and the safety of lending practices. 
 
