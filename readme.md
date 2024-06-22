@@ -54,6 +54,8 @@ The predictions are compared with the actual outcomes in the test set. Key perfo
 
 The main diagonal shows the correct answers. The confusion matrix showed that the model gave the correct result in cases where people returned the credit. There were `14926` such cases. The model made incorrect predictions `75` times in cases where it predicted that people would not return the credit, but in fact, they did. And `45` times the opposite happened. 
 
+![Classification report](credit-risk-classification/Report.png)
+
 The model demonstrates high accuracy with a significant number of correct predictions (`14926` `True Negatives` and `461` `True Positives`), and a low rate of `False Positives` (`75`), minimizing the risk of denying credit to potentially reliable clients. The small number of False Negatives (`46`) suggests effective risk management in credit issuance. Overall, the model maintains a good balance between precision and recall, ensuring reliability in predicting credit returns, which enhances both economic efficiency and the safety of lending practices. 
 
 The classification report shows excellent model performance with an `overall accuracy` of `0.99`. For class 0, the model achieved perfect `precision`, `recall`, and `F1-score` of `1.00` across `15001` instances, indicating flawless prediction for this class. Class 1, with 507 instances, showed good precision (0.86) and better `recall` (`0.91`), leading to an `F1-score` of `0.88`. The macro average scores highlight a robust model with `0.93` `precision`, `0.95` `recall`, and `0.94` `F1-score`, while the weighted average underscores consistent performance across different classes, each reflecting a `0.99` score in `precision`, `recall`, and `F1-score`.
@@ -79,3 +81,29 @@ Our model allows us to save money on loans that were issued but not repaid. Howe
 However, there are opportunities for improvement, particularly in enhancing the model's ability to detect actual defaulters more accurately. Future work could explore more sophisticated algorithms, integrate additional data points, or apply more complex feature engineering techniques to further refine the model’s predictive capabilities.
 
 Overall, this project underscores the utility of logistic regression in financial risk assessment, providing a valuable tool for credit risk management that can lead to more informed, data-driven decision-making in lending processes. 
+
+
+## Requirements
+Python Libraries:
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+
+Environment:
+Jupyter Notebook or any other Python development environment.
+
+## Installation
+1. Clone the repository to your local machine:
+
+   ```
+   [git clone https://github.com/NataliiaShevchenko620/credit-risk-classification.git](https://github.com/NataliiaShevchenko620/credit-risk-classification.git)
+   ```
+
+2. Install the required Python libraries
+3. Run the notebook
+
+## License
+
+This project is licensed under the MIT License.
